@@ -1,0 +1,184 @@
+@import "heart.css";
+
+.active {
+  color: #fab83e;
+}
+
+div section#profile,
+div section#links {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+div section#profile img {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 25px;
+  border-radius: 100%;
+  transition: all 0.2s;
+  box-shadow: none;
+  opacity: 1;
+}
+
+div section h1 {
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: 700;
+}
+
+div section p.description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: normal;
+  color: #aaa;
+}
+
+div section#links a {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 0 5px;
+  transition: all 0.2s ease;
+}
+
+div section#links a:hover {
+  font-size: 1.5rem;
+  color: #fab83e;
+  margin: 0 5px;
+  transition: all 0.2s ease;
+}
+
+div footer,
+div#divider {
+  border-top: 1px solid #ededed;
+  padding-top: 40px;
+  margin: 40px 0 0;
+  font-size: 1rem;
+  color: #aaa;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+}
+
+div footer:before,
+div section div#divider:before {
+  display: block;
+  content: " ";
+  width: 7px;
+  height: 7px;
+  border: 1px solid #ededed;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background: #fff;
+  box-shadow: 0 0 0 5px #fff;
+  border-radius: 3px;
+}
+
+div footer svg.heart {
+  fill: #fa3e3e;
+  margin: 0 0.5rem;
+  width: 0.7rem;
+  animation: pound 0.35s infinite alternate;
+  -webkit-animation: pound 0.35s infinite alternate;
+}
+
+div footer span {
+  font-weight: 300;
+  transition: font-weight 0.2s ease-in-out;
+}
+
+div footer span:hover {
+  font-weight: 600;
+  transition: font-weight 0.2s ease-in-out;
+}
+
+/* ------- */
+
+section#portfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section#portfolio div.card-body {
+  padding: 2rem;
+}
+
+section#portfolio div h5.card-project,
+section#portfolio div h3.card-title,
+section#portfolio div p.card-text,
+section#portfolio div p.card-text-small,
+section#portfolio div div.card-links {
+  text-align: right;
+}
+
+section#portfolio div h5.card-project-left,
+section#portfolio div h3.card-title-left,
+section#portfolio div p.card-text-left,
+section#portfolio div p.card-text-small-left,
+section#portfolio div div.card-links-left {
+  text-align: left;
+}
+
+section#portfolio div h5.card-project,
+section#portfolio div h5.card-project-left {
+  color: #fab83e;
+}
+
+section#portfolio div h3.card-title,
+section#portfolio div h3.card-title-left {
+  font-weight: bold;
+  color: #000;
+}
+
+section#portfolio div p.card-text {
+  background: #e9e9e9d6;
+  border-radius: 5px;
+  height: 110px;
+  width: 120%;
+  float: right;
+  padding: 20px;
+  margin-top: 40px;
+  color: #000;
+}
+
+section#portfolio div p.card-text-left {
+  background: #e9e9e9d6;
+  border-radius: 5px;
+  height: 110px;
+  width: 120%;
+  float: left;
+  padding: 20px;
+  margin-top: 40px;
+  color: #000;
+  position: relative;
+}
+
+section#portfolio div p.card-text-small span,
+section#portfolio div p.card-text-small-left span {
+  margin: 0 10px;
+}
+
+section#portfolio div div.card-links a,
+section#portfolio div div.card-links-left a {
+  color: #000;
+  font-size: 1.5rem;
+  margin: 0 5px;
+  transition: color 0.2s ease-in-out;
+}
+
+section#portfolio div div.card-links a:hover,
+section#portfolio div div.card-links-left a:hover {
+  color: #fab83e;
+  font-size: 1.5rem;
+  margin: 0 5px;
+  transition: color 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+  section#portfolio div p.card-text {
+    width: -webkit-fill-available;
+  }
+}
