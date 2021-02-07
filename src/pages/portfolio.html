@@ -15,7 +15,7 @@
 <body>
   <div class="container-xxl">
     <section id="profile" class="mt-5">
-      <img src="../img/profile.png" alt="">
+      <a onclick="history.back()"><img src="../img/profile.png" alt=""></a>
       <h1>Carlos Pessin</h1>
       <p class="description">
         <span>Web Developer</span>&nbsp;|&nbsp;
@@ -26,7 +26,7 @@
       <a href="https://www.linkedin.com/in/carlospessin/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/carlospessin" target="_blank"><i class="fab fa-github-square"></i></a>
       <a href="#"><i class="fas fa-list-alt active"></i></a>
-      <a href="#"><i class="fas fa-music"></i></a>
+      <a data-toggle="tooltip" data-placement="top" title="Em construção!"><i class="fas fa-music"></i></a>
     </section>
 
     <section id="portfolio">
@@ -169,6 +169,11 @@
       by <span>Pessin</span>
     </footer>
   </div>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 </body>
 
 </html>

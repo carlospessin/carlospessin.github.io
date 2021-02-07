@@ -16,9 +16,15 @@ div section#profile img {
   height: 125px;
   margin-bottom: 25px;
   border-radius: 100%;
-  transition: all 0.2s;
   box-shadow: none;
-  opacity: 1;
+  cursor: pointer;
+  border: 0 solid transparent;
+  transition: all 0.2s;
+}
+
+div section#profile img:hover {
+  border: 3px solid #fab83e;
+  transition: all 0.2s;
 }
 
 div section h1 {
@@ -41,7 +47,13 @@ div section#links a {
   transition: all 0.2s ease;
 }
 
-div section#links a:hover {
+div section#links a#music {
+  color: #aaa;
+}
+
+div section#links a#linkedin:hover,
+div section#links a#github:hover,
+div section#links a#portfolio:hover {
   font-size: 1.5rem;
   color: #fab83e;
   margin: 0 5px;
@@ -52,7 +64,7 @@ div footer,
 div#divider {
   border-top: 1px solid #ededed;
   padding-top: 40px;
-  margin: 40px 0 0;
+  margin: 40px 0 20px 0;
   font-size: 1rem;
   color: #aaa;
   font-weight: 300;
@@ -134,7 +146,7 @@ section#portfolio div h3.card-title-left {
 }
 
 section#portfolio div p.card-text {
-  background: #e9e9e9d6;
+  background: #fab83ec2;
   border-radius: 5px;
   height: 110px;
   width: 120%;
@@ -145,7 +157,7 @@ section#portfolio div p.card-text {
 }
 
 section#portfolio div p.card-text-left {
-  background: #e9e9e9d6;
+  background: #fab83ec2;
   border-radius: 5px;
   height: 110px;
   width: 120%;
