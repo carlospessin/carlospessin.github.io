@@ -190,7 +190,8 @@ section#portfolio div div.card-links-left a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  section#portfolio div p.card-text {
+  section#portfolio div p.card-text,
+  section#portfolio div p.card-text-left {
     width: -webkit-fill-available;
   }
 }
