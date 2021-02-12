@@ -58,7 +58,7 @@ div section#links a#linkedin:hover,
 div section#links a#github:hover,
 div section#links a#portfolio:hover {
   font-size: 1.5rem;
-  color: #FFF9E9;
+  color: #aaa;
   margin: 0 5px;
   transition: all 0.2s ease;
 }
@@ -76,7 +76,7 @@ div#divider {
 }
 
 div footer:before,
-div section div#divider:before {
+div#divider:before {
   display: block;
   content: " ";
   width: 7px;
@@ -111,90 +111,88 @@ div footer span:hover {
 
 /* ------- */
 
-section#portfolio img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-section#portfolio div.card-body {
-  padding: 2rem;
-}
-
-section#portfolio div h5.card-project,
-section#portfolio div h3.card-title,
-section#portfolio div p.card-text,
-section#portfolio div p.card-text-small,
-section#portfolio div div.card-links {
-  text-align: right;
-}
-
-section#portfolio div h5.card-project-left,
-section#portfolio div h3.card-title-left,
-section#portfolio div p.card-text-left,
-section#portfolio div p.card-text-small-left,
-section#portfolio div div.card-links-left {
+.card-title,
+.card-text {
   text-align: left;
 }
 
-section#portfolio div h5.card-project,
-section#portfolio div h5.card-project-left {
-  color: #fab83e;
+.card-links {
+  position: absolute;
+  /* bottom: 15px; */
 }
 
-section#portfolio div h3.card-title,
-section#portfolio div h3.card-title-left {
-  font-weight: bold;
-  color: #000;
+.card-text {
+  margin-bottom: 3rem;
 }
 
-section#portfolio div p.card-text {
-  background: #fab83ec2;
-  border-radius: 5px;
-  height: 110px;
-  width: 120%;
-  float: right;
-  padding: 20px;
-  margin-top: 40px;
-  color: #000;
-}
-
-section#portfolio div p.card-text-left {
-  background: #fab83ec2;
-  border-radius: 5px;
-  height: 110px;
-  width: 120%;
-  float: left;
-  padding: 20px;
-  margin-top: 40px;
-  color: #000;
-  position: relative;
-}
-
-section#portfolio div p.card-text-small span,
-section#portfolio div p.card-text-small-left span {
-  margin: 0 10px;
-}
-
-section#portfolio div div.card-links a,
-section#portfolio div div.card-links-left a {
+.card-links a{
   color: #000;
   font-size: 1.5rem;
   margin: 0 5px;
   transition: color 0.2s ease-in-out;
+  position: absolute;
+  /* bottom: 15px; */
 }
 
-section#portfolio div div.card-links a:hover,
-section#portfolio div div.card-links-left a:hover {
+.card-links a:hover {
   color: #fab83e;
   font-size: 1.5rem;
   margin: 0 5px;
   transition: color 0.2s ease-in-out;
 }
 
-@media only screen and (max-width: 767px) {
-  section#portfolio div p.card-text,
-  section#portfolio div p.card-text-left {
-    width: -webkit-fill-available;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "job1 job2 job3 job4"
+    ". . . ."
+    ". . . .";
+}
+.job1 { grid-area: job1; }
+.job2 { grid-area: job2; }
+.job3 { grid-area: job3; }
+.job4 { grid-area: job4; }
+
+@media only screen and (max-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "job1 job2"
+      "job3 job4";
   }
+  .job1 { grid-area: job1; }
+  .job2 { grid-area: job2; }
+  .job3 { grid-area: job3; }
+  .job4 { grid-area: job4; }
+
+  #jobs {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 0px;
+  grid-template-areas:
+    "job1"
+    "job2"
+    "job3"
+    "job4";
+}
+.job1 { grid-area: job1; }
+.job2 { grid-area: job2; }
+.job3 { grid-area: job3; }
+.job4 { grid-area: job4; }
+
 }
