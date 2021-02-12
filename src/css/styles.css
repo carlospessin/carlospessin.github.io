@@ -65,7 +65,7 @@ div section#links a#portfolio:hover {
 
 div footer,
 div#divider {
-  border-top: 1px solid #FFF9E9;
+  border-top: 1px solid #ededed;
   padding-top: 40px;
   margin: 40px 0 20px 0;
   font-size: 1rem;
@@ -81,7 +81,7 @@ div section div#divider:before {
   content: " ";
   width: 7px;
   height: 7px;
-  border: 1px solid #ededed;
+  border: 1px solid #FFF9E9;
   position: absolute;
   top: -5px;
   left: 50%;
