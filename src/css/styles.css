@@ -1,4 +1,7 @@
 @import "heart.css";
+body {
+  background-color: #FFF9E9;
+}
 
 .active {
   color: #fab83e;
@@ -55,7 +58,7 @@ div section#links a#linkedin:hover,
 div section#links a#github:hover,
 div section#links a#portfolio:hover {
   font-size: 1.5rem;
-  color: #fab83e;
+  color: #FFF9E9;
   margin: 0 5px;
   transition: all 0.2s ease;
 }
