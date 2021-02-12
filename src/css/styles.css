@@ -81,13 +81,13 @@ div section div#divider:before {
   content: " ";
   width: 7px;
   height: 7px;
-  border: 1px solid #FFF9E9;
+  border: 1px solid #ededed;
   position: absolute;
   top: -5px;
   left: 50%;
   margin-left: -5px;
   background: #fff;
-  box-shadow: 0 0 0 5px #fff;
+  box-shadow: 0 0 0 5px #FFF9E9;
   border-radius: 3px;
 }
 
