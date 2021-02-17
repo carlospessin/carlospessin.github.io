@@ -124,7 +124,8 @@ div section#links a {
   transition: all 0.2s ease;
 }
 
-div section#links a#music {
+div section#links a#music,
+div section#links a#about {
   color: #aaa;
 }
 /* 
@@ -184,6 +185,17 @@ div footer span:hover {
 }
 
 /* ------- */
+
+.card {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+  transition: all 0.2s ease-in-out;
+  top: 0;
+}
+
+.card:hover {
+  top: -5px;
+  transition: all 0.2s ease-in-out;
+}
 
 .card-body {
   height: 180px;
