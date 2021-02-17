@@ -43,6 +43,80 @@ div section p.description {
   color: #aaa;
 }
 
+div section#links {
+  display: flex;
+  justify-content: center;
+}
+
+div section#links .icon {
+  margin: 0 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+div section#links .icon span {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+div section#links .icon span i {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+div section#links .icon .tooltip {
+  background: #fff;
+  font-size: 15px;
+  padding: 2px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+  top: 30px;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+div section#links .icon:hover .tooltip {
+  top: 57px;
+  opacity: 1;
+  pointer-events: auto;
+}
+div section#links .icon:hover #linkedin span,
+div section#links .icon #linkedin .tooltip,
+div section#links .icon #linkedin .tooltip:before{
+  background: #0A66C2;
+  color: #fff;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+div section#links .icon:hover #github span,
+div section#links .icon #github .tooltip,
+div section#links .icon #github .tooltip:before{
+  background: #24292E;
+  color: #fff;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+div section#links .icon:hover #portfolio span,
+div section#links .icon #portfolio .tooltip,
+div section#links .icon #portfolio .tooltip:before{
+  background: #3f280e;
+  color: #fff;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
 div section#links a {
   font-size: 1.5rem;
   color: #000;
@@ -53,7 +127,7 @@ div section#links a {
 div section#links a#music {
   color: #aaa;
 }
-
+/* 
 div section#links a#linkedin:hover,
 div section#links a#github:hover,
 div section#links a#portfolio:hover {
@@ -61,7 +135,7 @@ div section#links a#portfolio:hover {
   color: #aaa;
   margin: 0 5px;
   transition: all 0.2s ease;
-}
+} */
 
 div footer,
 div#divider {
@@ -111,6 +185,10 @@ div footer span:hover {
 
 /* ------- */
 
+.card-body {
+  height: 180px;
+}
+
 .card-title,
 .card-text {
   text-align: left;
@@ -118,11 +196,7 @@ div footer span:hover {
 
 .card-links {
   position: absolute;
-  /* bottom: 15px; */
-}
-
-.card-text {
-  margin-bottom: 3rem;
+  bottom: 20px;
 }
 
 .card-links a{
@@ -134,11 +208,15 @@ div footer span:hover {
   /* bottom: 15px; */
 }
 
-.card-links a:hover {
+/* .card-links a:hover {
   color: #fab83e;
   font-size: 1.5rem;
   margin: 0 5px;
   transition: color 0.2s ease-in-out;
+} */
+
+.card-links span {
+  margin-right: 30px;
 }
 
 .grid-container {
