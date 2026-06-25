@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <title>Carlos Pessin - Portfólio</title>
+  <title>Carlos Pessin - Portfolio</title>
 </head>
 
 <body>
@@ -18,9 +18,9 @@
       <a onclick="history.back()"><img src="../img/profile.png" alt=""></a>
       <h1>Carlos Pessin</h1>
       <p class="description">
-        <span>Web Developer</span>&nbsp;|&nbsp;
-        <span>Musician</span>
+        <span>Software Engineer</span>
       </p>
+      <p class="profile-summary">I build practical apps, web experiences, and digital products with a focus on usability and clean execution.</p>
     </section>
     <section id="links">
 
@@ -40,22 +40,15 @@
 
       <div class="icon">
         <div class="tooltip">Portfolio</div>
-        <a id="portfolio" href="#">
+        <a id="portfolio" class="active-link" href="#">
           <span><i class="fas fa-list-alt"></i></span>
         </a>
       </div>
 
       <div class="icon">
         <div class="tooltip">Music</div>
-        <a id="music" href="#">
+        <a id="music" href="./music.html">
           <span><i class="fas fa-music"></i></span>
-        </a>
-      </div>
-
-      <div class="icon">
-        <div class="tooltip">Sobre</div>
-        <a id="about" href="#">
-          <span><i class="far fa-address-card"></i></span>
         </a>
       </div>
 
@@ -64,19 +57,138 @@
     <div id="divider"></div>
 
     <section id="jobs">
-      <div class="grid-container">
+      <div class="portfolio-group">
+        <div class="portfolio-heading">
+          <span>Mobile</span>
+          <h2>Apps</h2>
+        </div>
+        <div class="grid-container">
 
         <div class="card job1" style="width: 18rem;">
-          <img class="card-img-top"
-            src="https://raw.githubusercontent.com/carlospessin/cotacaoreau/master/src/img/preview.png"
-            alt="Card image cap">
+          <div class="app-screenshots app-screenshots--has-more" aria-label="Screenshots do RDV Unicampo">
+            <img src="../img/portfolio/rdv-unicampo/1.webp" alt="RDV Unicampo - tela inicial">
+            <img src="../img/portfolio/rdv-unicampo/2.webp" alt="RDV Unicampo - lista de despesas">
+            <img src="../img/portfolio/rdv-unicampo/3.webp" alt="RDV Unicampo - detalhe do relatorio">
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Cotação $REAU</h5>
-            <p class="card-text">Acompanhe a cotação em tempo real da $REAU.</p>
+            <div class="app-title">
+              <img src="../img/portfolio/rdv-unicampo/icon.webp" alt="Icone do RDV Unicampo">
+              <h5 class="card-title">RDV Unicampo</h5>
+            </div>
+            <p class="card-text">Corporate app for managing expense and travel reports.</p>
             <div class="card-links">
-              <span><a href="https://github.com/carlospessin/cotacaoreau" target="_blank"><i
-                    class="fab fa-github-square"></i></a></span>
-              <span><a href="https://cotacaoreau.com" target="_blank"><i
+              <span><a href="https://play.google.com/store/apps/details?id=br.coop.unicampo.rdv&hl=pt_BR"
+                  target="_blank" aria-label="RDV Unicampo no Google Play"><i class="fab fa-google-play"></i></a></span>
+              <span><a href="https://apps.apple.com/br/app/rdv-unicampo/id1558177084" target="_blank"
+                  aria-label="RDV Unicampo na App Store"><i class="fab fa-apple"></i></a></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card job2" style="width: 18rem;">
+          <div class="app-screenshots app-screenshots--has-more" aria-label="Screenshots do Parana Esporte">
+            <img src="../img/portfolio/parana-esporte/1.webp" alt="Parana Esporte - tela inicial">
+            <img src="../img/portfolio/parana-esporte/2.webp" alt="Parana Esporte - eventos esportivos">
+            <img src="../img/portfolio/parana-esporte/3.webp" alt="Parana Esporte - detalhes do evento">
+            <img src="../img/portfolio/parana-esporte/4.webp" alt="Parana Esporte - area do usuario">
+          </div>
+          <div class="card-body">
+            <div class="app-title">
+              <img src="../img/portfolio/parana-esporte/icon.webp" alt="Icone do Parana Esporte">
+              <h5 class="card-title">Parana Esporte</h5>
+            </div>
+            <p class="card-text">App for accessing sports information, events, and services in Parana.</p>
+            <div class="card-links">
+              <span><a href="https://play.google.com/store/apps/details?id=br.com.ingadigital.parana&hl=pt_BR"
+                  target="_blank" aria-label="Parana Esporte no Google Play"><i class="fab fa-google-play"></i></a></span>
+              <span><a href="https://apps.apple.com/br/app/paran%C3%A1-esporte/id6449873952" target="_blank"
+                  aria-label="Parana Esporte na App Store"><i class="fab fa-apple"></i></a></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card job2" style="width: 18rem;">
+          <div class="app-screenshots app-screenshots--two" aria-label="Screenshots do CBDE Brasil">
+            <img src="../img/portfolio/cbde-brasil/1.webp" alt="CBDE Brasil - tela inicial">
+            <img src="../img/portfolio/cbde-brasil/2.webp" alt="CBDE Brasil - area de competicoes">
+          </div>
+          <div class="card-body">
+            <div class="app-title">
+              <img src="../img/portfolio/cbde-brasil/icon.webp" alt="Icone do CBDE Brasil">
+              <h5 class="card-title">CBDE Brasil</h5>
+            </div>
+            <p class="card-text">App for following competitions, news, and school sports information.</p>
+            <div class="card-links">
+              <span><a href="https://play.google.com/store/apps/details?id=com.sportappcbde.sportappcbde"
+                  target="_blank" aria-label="CBDE Brasil no Google Play"><i class="fab fa-google-play"></i></a></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card job2" style="width: 18rem;">
+          <div class="app-screenshots app-screenshots--two" aria-label="Screenshots do Portal de Compras Santa Mariana">
+            <img src="../img/portfolio/compras-santa-mariana/1.webp" alt="Portal de Compras Santa Mariana - tela inicial">
+            <img src="../img/portfolio/compras-santa-mariana/2.webp" alt="Portal de Compras Santa Mariana - lista de compras">
+          </div>
+          <div class="card-body">
+            <div class="app-title">
+              <img src="../img/portfolio/compras-santa-mariana/icon.webp" alt="Icone do Portal de Compras Santa Mariana">
+              <h5 class="card-title">Portal de Compras - Santa Mariana</h5>
+            </div>
+            <p class="card-text">App for checking and tracking municipal purchasing processes.</p>
+            <div class="card-links">
+              <span><a href="https://play.google.com/store/apps/details?id=com.santamariana.portal_compras&hl=pt_BR"
+                  target="_blank" aria-label="Portal de Compras Santa Mariana no Google Play"><i class="fab fa-google-play"></i></a></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card job2" style="width: 18rem;">
+          <div class="app-screenshots" aria-label="Screenshots do CM Goioere">
+            <img src="../img/portfolio/cm-goioere/1.webp" alt="CM Goioere - tela inicial">
+            <img src="../img/portfolio/cm-goioere/2.webp" alt="CM Goioere - conteudo legislativo">
+          </div>
+          <div class="card-body">
+            <div class="app-title">
+              <img src="../img/portfolio/cm-goioere/icon.webp" alt="Icone do CM Goioere">
+              <h5 class="card-title">CM Goioere</h5>
+            </div>
+            
+            <p class="card-text">Institutional app for accessing City Council information and services.</p>
+            <div class="card-links">
+              <span><a href="https://play.google.com/store/apps/details?id=br.com.ingadigital.camaragoioere&hl=pt_BR"
+                  target="_blank" aria-label="CM Goioere no Google Play"><i class="fab fa-google-play"></i></a></span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="portfolio-group">
+        <div class="portfolio-heading">
+          <span>Browser e desktop</span>
+          <h2>Web</h2>
+        </div>
+        <div class="grid-container">
+
+
+        <div class="card job2" style="width: 18rem;">
+          <div class="app-screenshots app-screenshots--has-more" aria-label="Screenshots do Voxin">
+            <img src="../img/portfolio/voxin/1.png" alt="Voxin - simulador de entrevistas por voz com IA">
+            <img src="../img/portfolio/voxin/2.png" alt="Voxin - avaliacao final da entrevista">
+          </div>
+          <div class="card-body">
+            <div class="app-title">
+              <img src="../img/portfolio/voxin/icon.png" alt="Icone do Voxin">
+              <h5 class="card-title">Voxin</h5>
+            </div>
+            <p class="card-text">AI voice interview simulator that asks questions, listens to answers, and generates a final evaluation.</p>
+            <div class="card-links">
+              <span><a href="https://voxin-nine.vercel.app/" target="_blank" aria-label="Abrir Voxin"><i
                     class="fas fa-external-link-alt"></i></a></span>
             </div>
           </div>
@@ -84,27 +196,33 @@
 
 
         <div class="card job2" style="width: 18rem;">
-          <img class="card-img-top"
-            src="https://raw.githubusercontent.com/carlospessin/cdi/master/src/assets/preview.png" alt="Card image cap">
+          <div class="app-screenshots" aria-label="Widget para acompanhar o uso do Codex com visual compacto para desktop.">
+            <img src="../img/portfolio/codex-usage-widget/1.png"
+            alt="Codex Usage Widget - preview do app">
+          </div>
+          
           <div class="card-body">
-            <h5 class="card-title">Simulador de Rendimento CDI</h5>
-            <p class="card-text">Simule o rendimento diário, mensal e anual de seu investimento CDI.</p>
+            <div class="app-title">
+              <img src="../img/portfolio/codex-usage-widget/icon.png" alt="Icone do Codex Usage Widget">
+              <h5 class="card-title">Codex Usage Widget</h5>
+            </div>
+            <p class="card-text">Compact desktop widget for tracking Codex usage.</p>
             <div class="card-links">
-              <span><a href="https://github.com/carlospessin/cdi" target="_blank"><i
-                    class="fab fa-github-square"></i></a></span>
-              <span><a href="https://carlospessin.github.io/cdi/" target="_blank"><i
-                    class="fas fa-external-link-alt"></i></a></span>
+              <span><a href="https://github.com/carlospessin/codex-usage-widget" target="_blank"
+                  aria-label="Codex Usage Widget no GitHub"><i class="fab fa-github-square"></i></a></span>
+              <span><a href="https://github.com/carlospessin/codex-usage-widget/releases/tag/v1.0.0" target="_blank"
+                  aria-label="Release v1.0.0 do Codex Usage Widget"><i class="fas fa-download"></i></a></span>
             </div>
           </div>
         </div>
 
-        <div class="card job3" style="width: 18rem;">
-          <img class="card-img-top"
-            src="https://raw.githubusercontent.com/carlospessin/dev-finance/master/assets/preview2.png"
-            alt="Card image cap">
+        <div class="card job2" style="width: 18rem;">
+          <div class="app-screenshots" aria-label="Screenshots do Dev Finance">
+           <img src="https://raw.githubusercontent.com/carlospessin/dev-finance/master/assets/preview2.png" alt="Dev Finance - preview do app">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Dev Finance</h5>
-            <p class="card-text">Aplicação financeira construída no maratona discover da rocketseat</p>
+            <p class="card-text">Finance app built during Rocketseat's Discover Marathon.</p>
             <div class="card-links">
               <span><a href="https://github.com/carlospessin/dev-finance" target="_blank"><i
                     class="fab fa-github-square"></i></a></span>
@@ -115,12 +233,12 @@
         </div>
 
         <div class="card job4" style="width: 18rem;">
-          <img class="card-img-top"
-            src="https://raw.githubusercontent.com/carlospessin/fds-burger/master/src/assets/preview.png"
-            alt="Card image cap">
+          <div class="app-screenshots" aria-label="Screenshots do FDS-Burger">
+            <img src="https://raw.githubusercontent.com/carlospessin/fds-burger/master/src/assets/preview.png" alt="FDS-Burger - preview do app">
+          </div>
           <div class="card-body">
             <h5 class="card-title">FDS-Burger</h5>
-            <p class="card-text">Site institucional da Hamburgueria FDS</p>
+            <p class="card-text">Institutional website for FDS Burger.</p>
             <div class="card-links">
               <span><a href="https://github.com/carlospessin/fds-burger" target="_blank"><i
                     class="fab fa-github-square"></i></a></span>
@@ -131,12 +249,12 @@
         </div>
 
         <div class="card job5" style="width: 18rem;">
-          <img class="card-img-top"
-            src="https://raw.githubusercontent.com/carlospessin/glassmorphism-menu/master/src/images/preview.png"
-            alt="Card image cap">
+          <div class="app-screenshots" aria-label="Screenshots do Glassmorphism Menu">
+            <img src="https://raw.githubusercontent.com/carlospessin/glassmorphism-menu/master/src/images/preview.png" alt="Glassmorphism Menu - preview do app">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Glassmorphism Menu</h5>
-            <p class="card-text">Site institucional desenvolvido para estudo de Glasmorfismo</p>
+            <p class="card-text">Institutional website developed as a glassmorphism study.</p>
             <div class="card-links">
               <span><a href="https://github.com/carlospessin/glassmorphism-menu" target="_blank"><i
                     class="fab fa-github-square"></i></a></span>
@@ -147,12 +265,13 @@
         </div>
 
       </div>
+      </div>
 
     </section>
 
 
     <footer>
-      Made with
+      Built with
       <svg viewBox="0 0 32 29.6" class="heart">
         <path
           d="M23.6 0c-3.4 0-6.3 2.7-7.6 5.6C14.7 2.7 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 9.5 11.9 16 21.2 6.1-9.3 16-12.1 16-21.2C32 3.8 28.2 0 23.6 0z">
@@ -161,9 +280,97 @@
       by <span>Pessin</span>
     </footer>
   </div>
+
+  <div class="portfolio-modal" id="portfolioModal" hidden>
+    <button class="portfolio-modal__close" type="button" aria-label="Fechar imagem">&times;</button>
+    <button class="portfolio-modal__nav portfolio-modal__nav--prev" type="button" aria-label="Imagem anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <img class="portfolio-modal__image" src="" alt="">
+    <button class="portfolio-modal__nav portfolio-modal__nav--next" type="button" aria-label="Proxima imagem">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+    <div class="portfolio-modal__counter" aria-live="polite"></div>
+  </div>
+
   <script>
-    $(document).ready(function () {
-      $('[data-toggle="tooltip"]').tooltip();
+    const jobs = document.querySelector("#jobs");
+    const modal = document.querySelector("#portfolioModal");
+    const portfolioImages = Array.from(jobs.querySelectorAll(".app-screenshots img, .card-img-top, .app-title img"));
+    const modalImage = modal.querySelector(".portfolio-modal__image");
+    const closeModalButton = modal.querySelector(".portfolio-modal__close");
+    const previousImageButton = modal.querySelector(".portfolio-modal__nav--prev");
+    const nextImageButton = modal.querySelector(".portfolio-modal__nav--next");
+    const modalCounter = modal.querySelector(".portfolio-modal__counter");
+    let currentPortfolioImageIndex = 0;
+
+    function showPortfolioImage(index) {
+      currentPortfolioImageIndex = (index + portfolioImages.length) % portfolioImages.length;
+      const image = portfolioImages[currentPortfolioImageIndex];
+
+      modalImage.src = image.src;
+      modalImage.alt = image.alt;
+      modalCounter.textContent = `${currentPortfolioImageIndex + 1} / ${portfolioImages.length}`;
+    }
+
+    function openPortfolioImage(image) {
+      showPortfolioImage(portfolioImages.indexOf(image));
+      modal.hidden = false;
+      document.body.classList.add("modal-open");
+      closeModalButton.focus();
+    }
+
+    function closePortfolioImage() {
+      modal.hidden = true;
+      modalImage.src = "";
+      modalImage.alt = "";
+      document.body.classList.remove("modal-open");
+    }
+
+    function showPreviousPortfolioImage() {
+      showPortfolioImage(currentPortfolioImageIndex - 1);
+    }
+
+    function showNextPortfolioImage() {
+      showPortfolioImage(currentPortfolioImageIndex + 1);
+    }
+
+    jobs.addEventListener("click", function (event) {
+      const image = event.target.closest("img");
+
+      if (!image || !portfolioImages.includes(image)) {
+        return;
+      }
+
+      openPortfolioImage(image);
+    });
+
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        closePortfolioImage();
+      }
+    });
+
+    closeModalButton.addEventListener("click", closePortfolioImage);
+    previousImageButton.addEventListener("click", showPreviousPortfolioImage);
+    nextImageButton.addEventListener("click", showNextPortfolioImage);
+
+    document.addEventListener("keydown", function (event) {
+      if (modal.hidden) {
+        return;
+      }
+
+      if (event.key === "Escape") {
+        closePortfolioImage();
+      }
+
+      if (event.key === "ArrowLeft") {
+        showPreviousPortfolioImage();
+      }
+
+      if (event.key === "ArrowRight") {
+        showNextPortfolioImage();
+      }
     });
   </script>
 </body>
