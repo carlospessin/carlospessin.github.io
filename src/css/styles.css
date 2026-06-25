@@ -50,18 +50,36 @@ a {
 div section#profile {
   display: grid;
   justify-items: center;
-  padding-top: clamp(32px, 7vw, 76px);
+  padding-top: 0;
   text-align: center;
 }
 
-div section#profile a {
-  display: inline-flex;
-  border-radius: 50%;
+.profile-banner {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface-soft);
+  box-shadow: var(--shadow);
 }
 
-div section#profile img {
-  width: 204px;
-  height: 204px;
+.profile-banner__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 1;
+  object-fit: cover;
+}
+
+div section#profile .profile-link {
+  display: inline-flex;
+  border-radius: 50%;
+  margin-top: calc(clamp(132px, 18vw, 204px) * -0.4);
+}
+
+div section#profile .profile-avatar {
+  width: clamp(132px, 18vw, 204px);
+  height: clamp(132px, 18vw, 204px);
   margin-bottom: 24px;
   border: 1px solid var(--line);
   border-radius: 50%;
@@ -71,7 +89,7 @@ div section#profile img {
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-div section#profile img:hover {
+div section#profile .profile-avatar:hover {
   border-color: var(--accent);
   box-shadow: 0 20px 55px rgb(212 212 212 / 14%);
   transform: translateY(-2px);
